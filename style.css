@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+}
+
+/*index Homepage*/
+
+body {
+    text-align: center;
+    margin: 0;
+    background-image: url("img/pure.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.bartop {
+    background-color: #36d3ffb5;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    position: relative;
+    height: 60px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000000be;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.sidenav a:hover {
+    color: #0b7fad;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+.texthistory h1 {
+    background-color: #00b7ff;
+    border-radius: 20px;
+    outline: none;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.texthistory p {
+    font-size: 30px;
+    background-color: #00b7ff;
+    border-radius: 20px;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+
+
+
+
+.bartop span {
+    position: absolute;
+    left: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+/*Bmi Calculator*/
+
+#resultbox {
+    display: none;
+    text-align: center;
+    font-size: 30px;
+    color: whitesmoke;
+    background-color: #749BC2;
+    border-radius: 18px;
+    width: max-content;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+button {
+    background-color: #00aeffd1;
+    color: white;
+    padding: 17px 50px;
+    border: none;
+    border-radius: 18px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+button:hover {
+    background-color: #1b86bc95;
+}
+
+
+.bmicenterbox {
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    background-color: #22a3cea5;
+    padding: 70px;
+    border-radius: 30px;
+    border: none;
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+input {
+    width: 80%;
+    padding: 17px 20px;
+    box-sizing: border-box;
+    border: 5px solid #ccc;
+    border-radius: 8px;
+    font-size: 24px;
+    transition: 0.3s;
+
+}
+
+input:focus {
+    border-color: #09a2e4f2;
+    outline: none;
+}
+
+
+
+/*Todolist*/
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.topbox {
+    font-size: 14px;
+    width: 100%;
+    max-width: 900px;
+    height: 70px;
+    margin: 0 auto;
+    background: #91C8E4;
+    border-radius: 15px;
+}
+
+
+.todo-app {
+    font-size: 14px;
+    width: 100%;
+    max-width: 540px;
+    background: #91C8E4;
+    margin: 50px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 15px;
+}
+
+.todo-app h1 {
+    color: #be7a04;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 18px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.row input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 15px;
+
+}
+
+.row button {
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding: 16px 50px;
+    background: #ff5845;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.row button:hover {
+    background-color: #65b40c;
+    transition: 0.3s;
+}
+
+ul li {
+    list-style: none;
+    font-size: 25px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(img/uncheck.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+/* img check*/
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(img/check.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
