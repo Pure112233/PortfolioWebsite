@@ -13,8 +13,9 @@
 </head>
 
 <body>
-    
-</body>
+
+
+    <!-- Top Bar-->
     <div class="bartop">
 
         <h1 style="font-size: 35px;">Welcome To My Website !</h1>
@@ -27,33 +28,40 @@
             <a href="index.html">Home</a>
             <a href="bmi.html">BMI Calculator</a>
             <a href="todolist.html">ToDoList</a>
+            <a href="Temperature.html">Temperature</a>
             <a href="Activity.html">Activity</a>
 
         </div>
 
     </div>
 
-    <div class="bmicenterbox">
-    
-        <h3>กรอกค่าต่างๆ</h3><br>
-        <b>กรอกส่วนสูง[CM]</b><br><br>
-        <input type="number" id="userheight" placeholder="ส่วนสูงของคุณ [CM]"><br><br>
+    <div class="main-content">
+        <div class="bmicenterbox">
 
-        <b>กรอกน้ำหนัก[KG]</b><br><br>
-        <input type="number" id="userweight" placeholder="น้ำหนักของคุณ [KG]"><br><br>
+            <h3>กรอกค่าต่างๆ</h3><br>
+            <b>กรอกส่วนสูง[CM]</b><br><br>
+            <input type="number" id="userheight" placeholder="ส่วนสูงของคุณ [CM]"><br><br>
 
-        <button onclick='calbmi()'>คำนวณค่า BMI🧑‍⚕️</button><br><br>
-        
-        <div id="resultbox">
+            <b>กรอกน้ำหนัก[KG]</b><br><br>
+            <input type="number" id="userweight" placeholder="น้ำหนักของคุณ [KG]"><br><br>
 
-        <p id="result"></p>
-        <p id="level"></p><br>
-        <p id="tip"></p>
+            <button onclick='calbmi()'>คำนวณค่า BMI🧑‍⚕️</button><br><br>
 
+            <div id="resultbox">
+
+                <p id="result"></p>
+                <p id="level"></p><br>
+                <p id="tip"></p>
+
+            </div>
+        </div>
     </div>
-  </div>
 
-
+    
+    <footer>
+        Website Made By.Pure (Phudis Bothongkhamkun) 💖💖
+    </footer>
     <script src="app.js"></script>
 </body>
+
 </html>
