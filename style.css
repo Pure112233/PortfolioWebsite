@@ -7,7 +7,16 @@
 
 /*index Homepage*/
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
     text-align: center;
     margin: 0;
     background-image: url("img/pure.jpg");
@@ -17,6 +26,19 @@ body {
     height: 100vh;
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
+}
+
+footer {
+    background-color: #00b7ff5e;
+    color: #fff;
+    text-align: center;
+    margin-top: 3%;
+    padding: 15px 0;
+    font-size: 20px;
+}
+
+.main-content {
+    flex: 1;
 }
 
 .bartop {
@@ -118,12 +140,12 @@ body {
 
 
 button {
-    background-color: #00aeffd1;
+    background-color: #169a4bfc;
     color: white;
     padding: 17px 50px;
     border: none;
     border-radius: 18px;
-    font-size: 20px;
+    font-size: 22px;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -156,7 +178,7 @@ input {
     box-sizing: border-box;
     border: 5px solid #ccc;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 22px;
     transition: 0.3s;
 
 }
@@ -289,4 +311,34 @@ ul li span {
 
 ul li span:hover {
     background: #edeef0;
+}
+
+/*Temperature*/
+
+.temmainbox {
+    background-color: #22a3cea5;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+#farenheitresultbox {
+    color: white;
+    font-size: 25px;
+    background-color: #66b40c71;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+#celsiusresultbox {
+    color: white;
+    font-size: 25px;
+    background-color: #66b40c71;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
 }
