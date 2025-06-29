@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Pure Temperature</title>
+</head>
+
+
+
+<body>
+    <!-- Top Bar-->
+    <div class="bartop">
+
+        <h1 style="font-size: 35px;">Welcome To My Website !</h1>
+
+        <span onclick="openNav()">&#9776; Menu</span>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="bmi.html">BMI Calculator</a>
+            <a href="todolist.html">ToDoList</a>
+            <a href="Temperature.html">Temperature</a>
+            <a href="Activity.html">Activity</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="main-content">
+        <div class="temmainbox">
+            <!--คำนวณองศาเซลเซียสเป็นฟาเรนไฮต์-->
+            <h1>โปรแกรมคำนวณอุณหภูมิ</h1><br>
+            <h1>กรอกอุณหภูมิเซลเซียส (Celsius)</h1>
+            <input type="number" placeholder="Celsius" id="inputcelsius"><br><br>
+            <button onclick="ctof()">แปลงเป็นฟาเรนไฮต์</button><br><br>
+
+            <!--กล่องแปลงเซลเซียสเป็นฟาเรนไฮต์-->
+            <div id="farenheitresultbox">
+                <p id="resultfarenheit"></p>
+            </div>
+
+            <!--คำนวณองศาฟาเรนไฮต์เป็นเซลเซียส-->
+            <h1>กรอกอุณหภูมิฟาเรนไฮต์ (Fahrenheit)</h1><br>
+            <input type="number" placeholder="Fahrenheit" id="inputfahrenheit"><br><br>
+            <button onclick="ftoc()">แปลงเป็นเซลเซียส</button>
+
+            <div id="celsiusresultbox">
+                <p id="resultcelsius"></p>
+            </div>
+            <br><br>
+            
+        </div>
+    </div>
+
+
+    
+    <footer>
+        Website Made By.Pure (Phudis Bothongkhamkun) 💖💖
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+
+
+</html>
