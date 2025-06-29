@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!-- Top Bar-->
     <div class="bartop">
 
         <h1 style="font-size: 35px;">Welcome To My Website !</h1>
@@ -27,33 +28,34 @@
             <a href="index.html">Home</a>
             <a href="bmi.html">BMI Calculator</a>
             <a href="todolist.html">ToDoList</a>
+            <a href="Temperature.html">Temperature</a>
             <a href="Activity.html">Activity</a>
 
         </div>
     </div>
 
 
-    <div class="container">
+            <div class="container">
 
-        <div class="topbox">
-            <h1 style="text-align: center;">Welcome !, To do list By.Phudis Bothongkhamkun</h1>
-        </div>
+                <div class="topbox">
+                    <h1 style="text-align: center;">Welcome !, To do list By.Phudis Bothongkhamkun</h1>
+                </div>
 
-        <div class="todo-app">
-            <h1>Let check yout list ! 📃📃</h1>
-            <div class="row">
-                <input  type="text" id="inputbox" placeholder="เพิ่มงานของคุณ">
-                <button  onclick="Addtask()">Add</button>
+                <div class="todo-app">
+                    <h1>Let check yout list ! 📃📃</h1>
+                    <div class="row">
+                        <input  type="text" id="inputbox" placeholder="เพิ่มงานของคุณ">
+                        <button  onclick="addtask()">Add</button>
+                    </div>
+                    <ul id="todolist">
+
+                    </ul>
+                </div>
             </div>
-            <ul id="listcontainer">
-                <!-- <li class="checked">Tash 1</li>
-                <li>Tash 2</li>
-                <li>Tash 3</li> -->
-            </ul>
-        </div>
-    </div>
 
-
+    <footer>
+        Website Made By.Pure (Phudis Bothongkhamkun) 💖💖
+    </footer>
     <script src="app.js"></script>
 </body>
 
