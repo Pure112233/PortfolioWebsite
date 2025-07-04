@@ -180,6 +180,7 @@ input {
     border-radius: 8px;
     font-size: 22px;
     transition: 0.3s;
+    margin-bottom: 2vh;
 
 }
 
@@ -341,4 +342,45 @@ ul li span:hover {
     width: 100%;
     max-width: 450px;
     margin: 0 auto;
+}
+
+/*QrcodeGen*/
+
+.qrcodebox {
+    text-align: center;
+    padding: 10vh;
+    font-size: 35px;
+    background-color: lightslategray;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 5vh;
+}
+
+.qrcodebox p {
+    font-size: 30px;
+    font-weight: 555;
+    margin: 1vh;
+    background-color: rgb(132, 199, 247);
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 1vh;
+    margin-bottom: 2vh;
+}
+
+
+.imgbox {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2vh;
+    background-color: rgb(132, 199, 247);
+    max-width: 500px;
+    border-radius: 12px;
+}
+
+img {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
