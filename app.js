@@ -123,3 +123,22 @@ function ftoc(){
         document.getElementById("resultcelsius").innerHTML = "แปลงจาก : "+fahrenheit+" °F"+"<br>"+"ได้เป็น : "+ resultcelsius.toFixed(2) +" °C"
     }
 }
+
+//Qrcode generator
+
+//https://api.qrserver.com/v1/create-qr-code/?size=200x200&data= 
+
+function Qrcodegen() {
+    const text = document.getElementById("text").value.trim();
+    var qrcodeimg = document.getElementById("qrcodeimg");
+
+    if (text === "") {
+        alert("Please enter a text or URL to generate a QR code.");
+        return;
+    }
+    const apiurl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(text)}`;
+    qrcodeimg.src = apiurl;
+
+}
+
+
