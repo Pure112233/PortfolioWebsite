@@ -45,12 +45,12 @@ footer {
     background-color: #36d3ffb5;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 10px;
     border-radius: 10px;
-    justify-content: center;
-    position: relative;
-    height: 60px;
+    min-height: 60px;
+    padding: 5px 10px;
     margin-bottom: 20px;
-    outline: none;
 }
 
 
@@ -120,6 +120,29 @@ footer {
     left: 10px;
     font-size: 30px;
     cursor: pointer;
+}
+
+.menubtn {
+    font-size: 24px;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.welcome {
+    font-size: 35px;
+    flex: 1;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .welcome {
+        font-size: 20px;
+    }
+
+    .menubtn {
+        font-size: 18px;
+    }
 }
 
 
